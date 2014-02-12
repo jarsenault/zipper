@@ -1,0 +1,112 @@
+    1  /Users/jessicaarsenault/Downloads/mricronmac/dcm2nii ; exit;
+    2  /Users/jessicaarsenault/Downloads/mricronmac/dcm2nii ; exit;
+    3  /Users/jessicaarsenault/Downloads/Neuroscience\ 1991\ Llinás-2 ; exit;
+    4  /Users/jessicaarsenault/Downloads/unnamed-1 ; exit;
+    5  /Users/jessicaarsenault/Downloads/unnamed-2 ; exit;
+    6  /Users/jessicaarsenault/Downloads/unnamed-3 ; exit;
+    7  /Users/jessicaarsenault/Downloads/Frontiers ; exit;
+    8  /Users/jessicaarsenault/Downloads/unnamed-5 ; exit;
+    9  /Users/jessicaarsenault/Downloads/unnamed-5 ; exit;
+   10  whoami
+   11  ls
+   12  pwd
+   13  ls -F
+   14  mkdir zipper
+   15  ls
+   16  cd zipper
+   17  pwd
+   18  textedit animals.txt
+   19  nano animals.txt
+   20  ls
+   21  cat animals.txt 
+   22  wc animals.txt 
+   23  head -5 animals.txt 
+   24  tail -3 animals.txt 
+   25  head -5 animals.txt > temp.txt
+   26  ls
+   27  cat temp.txt 
+   28  rm temp.txt 
+   29  ls
+   30  head -5 animals.txt > temp.txt
+   31  tail -3 temp.txt 
+   32  cat animals.txt 
+   33  history
+   34  rm temp.txt 
+   35  head -5 animals.txt | tail -3
+   36  head -5 animals.txt | tail -3 | wc -l
+   37  wc animals.txt 
+   38  cat animals.txt 
+   39  tail -4 animals.txt | head -3
+   40  tail -5 animals.txt | head -3
+   41  history | tail -20 > how-i-produced-fig3.txt
+   42  ls
+   43  rm how-i-produced-fig3.txt 
+   44  ls
+   45  cut -d , -f 1 animals.txt 
+   46  cut -d , -f 3 animals.txt 
+   47  cut -d , -f 1 animals.txt | uniq
+   48  cut -d , -f 2 animals.txt | sort | uniq
+   49  man sort
+   50  cut -d , -f 2 animals.txt | sort -f | uniq
+   51  history
+   52  cut -d , -f 1 animals.txt | uniq -c
+   53  cat animals.txt 
+   54  cut -d , -f 3 animals.txt | uniq -c
+   55  cut -d , -f 2 animals.txt | uniq -c
+   56  cut -d , -f 2 animals.txt |sort | uniq -c
+   57  cut -d , -f 2 animals.txt | sort | uniq -c
+   58  cat animals.txt 
+   59  tail -9 animals.txt | cut -d , -f 2 animals.txt | sort | uniq -c
+   60  grep raccoon animals.txt 
+   61  grep -v raccoon animals.txt 
+   62  grep -v Species animals.txt | cut -d , -f 2
+   63  grep -v Species animals.txt | cut -d , -f 2 | sort | uniq -c
+   64  grep -v Species animals.txt | cut -d , -f 2 | sort | uniq -c | sort
+   65  grep -v Species animals.txt | cut -d , -f 2 | sort | uniq -c | sort -r
+   66  nano animals2.txt
+   67  nano animals3.txt
+   68  grep fox animals.txt 
+   69  for filename in animals.txt animals2.txt animals3.txt ; do grep fox animals.txt ; done
+   70  for filename in animals.txt animals2.txt animals3.txt ; do grep fox $filename ; done
+   71  for filename in *.txt; do grep fox $filename ; done
+   72  for filename in *.txt; do echo grep fox $filename ; done
+   73  history
+   74  for filename in animals*; do cut -d , -f 2 | sort |uniq -c; done
+   75  for filename in *.txt; do  cut -d , -f2 in $filename | sort | uniq -c; done
+   76  for filename in *.txt; do  cut -d , -f2 in $filename | grep -v Species | sort | uniq -c; done
+   77  for filename in *.txt; do echo $filename; cut -d , -f 2 $filename | grep -v Species | sort | uniq -c; done
+   78  ls
+   79  history
+   80  history | grep 77 > oreo.sh
+   81  e oreo.sh 
+   82  ls
+   83  cat oreo.sh 
+   84  bash oreo.sh 
+   85  nano oreo.sh 
+   86  bash oreo.sh 
+   87  cat oreo.sh 
+   88  bash oreo.sh | wc
+   89  ls
+   90  ipython notebook
+   91  python
+   92  ls
+   93  pwd
+   94  nano slice.py
+   95  python slice.py
+   96  ls
+   97  nano slice.py 
+   98  nano slice.py 
+   99  python slice.py 
+  100  more animals.txt 
+  101  nano slice.py 
+  102  nano joe.py
+  103  nano test.txt
+  104  cat test.txt | python joe.py
+  105  nano joe.py 
+  106  cat test.txt | python joe.py
+  107  cat animals.txt | python joe.py 
+  108  nano joe.py 
+  109  for filename in *.csv; do cat $filename | python joe.py ; done
+  110  ssh -X jarsenault@172.24.0.154
+  111  ssh jarsenault
+  112  history > software-carpentry-day1.txt
